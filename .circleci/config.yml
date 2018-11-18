@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+    steps:
+      - checkout
+      - run:
+          name: hugo install
+          command: |
+              go get -v github.com/spf13/hugo
+              git config --global user.name "iceEiji"
+              git config --global user.email "guitar.pg.sc@gmail.com"
+      - run:
+          name: Print the Current Time
+          command: date
