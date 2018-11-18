@@ -1,6 +1,6 @@
 baseURL = "https://iceeiji.github.io"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "ja-jp"
+title = "iceEiji's"
 theme = "beautifulhugo"
 canonifyurls = true
 publishDir = "docs"
