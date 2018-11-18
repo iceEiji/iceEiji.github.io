@@ -12,5 +12,10 @@ jobs:
               git config --global user.name "iceEiji"
               git config --global user.email "guitar.pg.sc@gmail.com"
       - run:
-          name: Print the Current Time
-          command: date
+          name: hugo & update master
+          command: |
+            hugo
+            git add .
+            git commit -m "run \"hugo\" command."
+            git push origin source
+            git subtree push --prefix docs/ origin master
