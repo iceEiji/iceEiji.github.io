@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - source
     docker:
       - image: circleci/golang:1.12
     steps:
