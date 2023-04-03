@@ -1,6 +1,0 @@
-baseURL = "https://iceeiji.github.io"
-languageCode = "ja-jp"
-title = "iceEiji's"
-theme = "beautifulhugo"
-canonifyurls = true
-publishDir = "docs"
