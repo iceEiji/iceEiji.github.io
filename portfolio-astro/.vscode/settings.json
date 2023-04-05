@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#3890ae99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#3890ae"
+    "peacock.color": "#3890ae",
+    "prettier.documentSelectors": [
+        "\"**/*.astro\""
+    ]
 }
