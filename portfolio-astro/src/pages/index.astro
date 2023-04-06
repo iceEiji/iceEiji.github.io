@@ -1,16 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout pageTitle="Home">
-	<main>
-	</main>
+  <main>
+    <div class="flex justify-center items-center">
+      <img
+        src="/profile-image.png"
+        alt="Profile image. This is my cat."
+        class="w-32 h-32 mr-12"
+      />
+      <div>
+        <p class="text-3xl mb-4">iceEiji</p>
+        <address class="mr-4 inline-block">
+          <a href="mailto:ice.eiji.work@gmail.com">
+            <img
+              src="mail-round.png"
+              alt="my e-mail address link"
+              class="w-10 h-10"
+            />
+          </a>
+        </address>
+        <a href="https://twitter.com/iceEiji2" class="mr-4 inline-block">
+          <img
+            src="twitter-round.png"
+            alt="my twitter account link"
+            class="w-10 h-10"
+          />
+        </a>
+        <a href="https://github.com/iceEiji" class="inline-block">
+          <img
+            src="github-round.png"
+            alt="my github account link"
+            class="w-10 h-10"
+          />
+        </a>
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
 </style>
