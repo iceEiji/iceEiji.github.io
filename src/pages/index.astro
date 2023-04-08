@@ -1,5 +1,7 @@
 ---
+import VerticalTimeline from "../components/VerticalTimeline.astro";
 import Layout from "../layouts/Layout.astro";
+import { profile } from "./data/profile";
 ---
 
 <Layout pageTitle="Home">
@@ -37,6 +39,9 @@ import Layout from "../layouts/Layout.astro";
         </a>
       </div>
     </div>
+
+    <h2 class="text-3xl mb-4"><span class="text-main">T</span>imeline</h2>
+    <VerticalTimeline timelineEvents={profile.timelineEvents} />
   </main>
 </Layout>
 
