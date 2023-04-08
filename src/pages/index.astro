@@ -20,28 +20,26 @@ import IconButton from "../components/parts/buttons/IconButton.astro";
       <div>
         <p class="text-3xl mb-4">iceEiji</p>
         <address class="mr-4 mb-4 inline-block">
-          <a href="mailto:ice.eiji.work@gmail.com">
-            <img
-              src={mailIconPng}
-              alt="my e-mail address link"
-              class="w-10 h-10"
-            />
-          </a>
+          <IconButton
+            href="mailto:ice.eiji.work@gmail.com"
+            src={mailIconPng}
+            alt="my e-mail address link"
+          />
         </address>
-        <a href="https://twitter.com/iceEiji2" class="mr-4 mb-4 inline-block">
-          <img
+        <div class="mr-4 mb-4 inline-block">
+          <IconButton
+            href="https://twitter.com/iceEiji2"
             src={twitterIconPng}
             alt="my twitter account link"
-            class="w-10 h-10"
           />
-        </a>
-        <a href="https://github.com/iceEiji" class="mr-4 mb-4 inline-block">
-          <img
+        </div>
+        <div class="mr-4 mb-4 inline-block">
+          <IconButton
+            href="https://github.com/iceEiji"
             src={githubIconPng}
             alt="my github account link"
-            class="w-10 h-10"
           />
-        </a>
+        </div>
       </div>
     </div>
 
