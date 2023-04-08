@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# ポートフォリオサイト （Astro Starter Kit: Basics）
 
 ```
 npm create astro@latest -- --template basics
@@ -20,14 +20,12 @@ Inside of your Astro project, you'll see the following folders and files:
 ```
 /
 ├── public/
-│   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── parts/ # コンポーネントの最小単位
+│   │   └── components/ # コンポーネントの組み合わせで構成されるもの
 │   ├── layouts/
-│   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro
 └── package.json
 ```
 
