@@ -75,8 +75,17 @@ const builtAt: Date = new Date();
       <VerticalTimeline timelineEvents={profile.timelineEvents} />
     </div>
 
+    <!-- ソースコード -->
+    <p class="text-sm text-gray-400 text-right">
+      code: <a href="https://github.com/iceEiji/iceEiji.github.io"
+        >"iceEiji/iceEiji.github.io" repository on Github</a
+      >
+    </p>
+
     <!-- 最終更新日時 -->
-    <p class="text-sm text-gray-400 text-right">(最終更新: {builtAt.toLocaleString()})</p>
+    <p class="text-sm text-gray-400 text-right">
+      builtAt: {builtAt.toLocaleString()}
+    </p>
   </main>
 </Layout>
 
