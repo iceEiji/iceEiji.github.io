@@ -11,7 +11,7 @@ import IconButton from "../components/parts/buttons/IconButton.astro";
 
 <Layout pageTitle="Home">
   <main>
-    <!-- 名前・イメージ・連絡先 -->
+    <!-- イメージ・名前・職業・連絡先 -->
     <div class="flex justify-center items-center mb-8">
       <img
         src={profileIconPng}
@@ -19,7 +19,8 @@ import IconButton from "../components/parts/buttons/IconButton.astro";
         class="w-32 h-32 mr-12"
       />
       <div>
-        <p class="text-3xl mb-4">iceEiji</p>
+        <p class="text-3xl mb-1">iceEiji</p>
+        <p class="text-1xl mb-4 text-gray-400">Freelance Engineer</p>
         <address class="mr-4 mb-4 inline-block">
           <IconButton
             href="mailto:ice.eiji.work@gmail.com"
