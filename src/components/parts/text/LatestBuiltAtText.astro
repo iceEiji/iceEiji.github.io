@@ -1,7 +1,12 @@
 ---
 const builtAt: Date = new Date();
+const formated = new Intl.DateTimeFormat("ja-JP", {
+  dateStyle: "medium",
+  timeStyle: "medium",
+  timeZone: "Asia/Tokyo",
+}).format(builtAt);
 ---
 
 <p class="text-sm text-gray-400 text-right">
-  Latest built at {builtAt.toLocaleString()}
+  Latest built at {formated}
 </p>
