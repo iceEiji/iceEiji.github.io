@@ -1,8 +1,8 @@
-# iceEijiのポートフォリオサイト
+# iceEiji のポートフォリオサイト
 
 ## 使っている技術要素
 
-* using [Astro](https://astro.build/)
+- using [Astro](https://astro.build/)
 
 ## 🚀 Project Structure
 
@@ -28,8 +28,8 @@ Inside of your Astro project, you'll see the following folders and files:
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
+| Command                 | Action                                           |
+| :---------------------- | :----------------------------------------------- |
 | `yarn install`          | Installs dependencies                            |
 | `yarn run dev`          | Starts local dev server at `localhost:3000`      |
 | `yarn run build`        | Build your production site to `./dist/`          |
