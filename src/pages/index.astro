@@ -75,11 +75,13 @@ const builtAt: Date = new Date();
       <h2 class="text-3xl mb-2"><span class="text-main">T</span>imeline</h2>
       <VerticalTimeline timelineEvents={profile.timelineEvents} />
     </div>
+  </main>
 
+  <aside class="m-auto p-6 max-w-[60ch]">
     <!-- Twitterタイムライン -->
     <TwitterTimeline
       userName="iceEiji2"
       height={500}
     ></TwitterTimeline>
-  </main>
+  </aside>
 </Layout>
