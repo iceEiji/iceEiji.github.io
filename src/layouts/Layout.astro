@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/parts/Footer.astro";
 import Header from "../components/parts/Header.astro";
 
 export interface Props {
@@ -22,6 +23,7 @@ const appTitle = "IceEiji's Sandbox";
   <body class="bg-base">
     <Header title={appTitle} />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>

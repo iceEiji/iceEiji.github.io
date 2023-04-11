@@ -13,7 +13,7 @@ const builtAt: Date = new Date();
 ---
 
 <Layout pageTitle="Home">
-  <main>
+  <main class="m-auto p-6 max-w-[60ch]">
     <!-- イメージ・名前・職業・連絡先 -->
     <div class="flex justify-center items-center mb-8">
       <img
@@ -81,26 +81,5 @@ const builtAt: Date = new Date();
       userName="iceEiji2"
       height={500}
     ></TwitterTimeline>
-
-    <!-- ソースコード -->
-    <p class="text-sm text-gray-400 text-right">
-      <a
-        href="https://github.com/iceEiji/iceEiji.github.io"
-        class="text-blue-400">"iceEiji/iceEiji.github.io" repository</a
-      > on Github
-    </p>
-
-    <!-- 最終更新日時 -->
-    <p class="text-sm text-gray-400 text-right">
-      Latest built at {builtAt.toLocaleString()}
-    </p>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-</style>

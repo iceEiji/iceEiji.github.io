@@ -1,0 +1,16 @@
+---
+import GitRepositoryLink from './anchor/GitRepositoryLink.astro';
+import LatestBuiltAtText from './text/LatestBuiltAtText.astro';
+
+---
+
+<footer class="m-auto p-6">
+  <!-- ソースコードへのリンク -->
+  <GitRepositoryLink
+    userName="iceEiji"
+    repositoryName="iceEiji.github.io"
+  ></GitRepositoryLink>
+
+  <!-- 最終更新日時 -->
+  <LatestBuiltAtText></LatestBuiltAtText>
+</footer>
