@@ -8,6 +8,7 @@ import twitterIconPng from "../images/twitter-round.png";
 import githubIconPng from "../images/github-round.png";
 import IconButton from "../components/parts/buttons/IconButton.astro";
 import TwitterTimeline from "../components/parts/external-services/TwitterTimeline.astro";
+import RaindropTimeline from "../components/parts/external-services/RaindropTimeline.astro";
 ---
 
 <Layout pageTitle="Home">
@@ -77,9 +78,21 @@ import TwitterTimeline from "../components/parts/external-services/TwitterTimeli
     </main>
 
     <aside class="p-6 max-w-[60ch] lg:flex-auto lg:w-[35ch]">
+      <!-- Raindrop.io タイムライン -->
+      <div class="mb-8">
+        <h2 class="text-2xl mb-2 pb-2 border-b-2 border-main">Bookmarks</h2>
+        <RaindropTimeline
+          userName="iceEiji"
+          collectionId="bookmarks-33388829"
+          height={800}
+        />
+      </div>
+
       <!-- Twitterタイムライン -->
-      <h2 class="text-2xl mb-2 pb-2 border-b-2 border-main">Tweets</h2>
-      <TwitterTimeline userName="iceEiji2" height={500} />
+      <div class="mb-8">
+        <h2 class="text-2xl mb-2 pb-2 border-b-2 border-main">Tweets</h2>
+        <TwitterTimeline userName="iceEiji2" height={500} />
+      </div>
     </aside>
   </div>
 </Layout>

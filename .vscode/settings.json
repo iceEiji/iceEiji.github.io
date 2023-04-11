@@ -20,5 +20,5 @@
   },
   "peacock.color": "#3890ae",
   "prettier.documentSelectors": ["\"**/*.astro\""],
-  "cSpell.words": ["astro", "astrojs", "Eiji"]
+  "cSpell.words": ["astro", "astrojs", "Eiji", "tailwindcss"]
 }
