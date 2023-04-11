@@ -1,0 +1,19 @@
+---
+export interface Props {
+  userName: string;
+  height?: number;
+  width?: number;
+}
+
+const { userName, height, width } = Astro.props;
+---
+
+<a
+  class="twitter-timeline"
+  data-height={height}
+  data-widt={width}
+  data-theme="light"
+  href={`https://twitter.com/${userName}?ref_src=twsrc%5Etfw`}>Tweets by {userName}</a
+>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"
+></script>

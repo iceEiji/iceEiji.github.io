@@ -7,6 +7,7 @@ import mailIconPng from "../images/mail-round.png";
 import twitterIconPng from "../images/twitter-round.png";
 import githubIconPng from "../images/github-round.png";
 import IconButton from "../components/parts/buttons/IconButton.astro";
+import TwitterTimeline from "../components/parts/external-services/TwitterTimeline.astro";
 
 const builtAt: Date = new Date();
 ---
@@ -74,6 +75,12 @@ const builtAt: Date = new Date();
       <h2 class="text-3xl mb-2"><span class="text-main">T</span>imeline</h2>
       <VerticalTimeline timelineEvents={profile.timelineEvents} />
     </div>
+
+    <!-- Twitterタイムライン -->
+    <TwitterTimeline
+      userName="iceEiji2"
+      height={500}
+    ></TwitterTimeline>
 
     <!-- ソースコード -->
     <p class="text-sm text-gray-400 text-right">
