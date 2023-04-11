@@ -8,79 +8,77 @@ import twitterIconPng from "../images/twitter-round.png";
 import githubIconPng from "../images/github-round.png";
 import IconButton from "../components/parts/buttons/IconButton.astro";
 import TwitterTimeline from "../components/parts/external-services/TwitterTimeline.astro";
-
 ---
 
 <Layout pageTitle="Home">
-  <main class="m-auto p-6 max-w-[60ch]">
-    <!-- イメージ・名前・職業・連絡先 -->
-    <div class="flex justify-center items-center mb-8">
-      <img
-        src={profileIconPng}
-        alt="Profile image. This is my cat."
-        class="w-32 h-32 mr-12"
-      />
-      <div>
-        <p class="text-3xl mb-1">iceEiji</p>
-        <p class="text-1xl mb-4 text-gray-400">Freelance Engineer</p>
-        <address class="mr-4 mb-4 inline-block">
-          <IconButton
-            href="mailto:ice.eiji.work@gmail.com"
-            src={mailIconPng}
-            alt="my e-mail address link"
-          />
-        </address>
-        <div class="mr-4 mb-4 inline-block">
-          <IconButton
-            href="https://twitter.com/iceEiji2"
-            src={twitterIconPng}
-            alt="my twitter account link"
-          />
-        </div>
-        <div class="mr-4 mb-4 inline-block">
-          <IconButton
-            href="https://github.com/iceEiji"
-            src={githubIconPng}
-            alt="my github account link"
-          />
+  <div class="lg:flex">
+    <main class="p-6 max-w-[60ch] lg:max-w-[70ch] lg:flex-auto">
+      <!-- イメージ・名前・職業・連絡先 -->
+      <div class="flex justify-center items-center mb-8">
+        <img
+          src={profileIconPng}
+          alt="Profile image. This is my cat."
+          class="w-32 h-32 mr-12"
+        />
+        <div>
+          <p class="text-3xl mb-1">iceEiji</p>
+          <p class="text-1xl mb-4 text-gray-400">Freelance Engineer</p>
+          <address class="mr-4 mb-4 inline-block">
+            <IconButton
+              href="mailto:ice.eiji.work@gmail.com"
+              src={mailIconPng}
+              alt="my e-mail address link"
+            />
+          </address>
+          <div class="mr-4 mb-4 inline-block">
+            <IconButton
+              href="https://twitter.com/iceEiji2"
+              src={twitterIconPng}
+              alt="my twitter account link"
+            />
+          </div>
+          <div class="mr-4 mb-4 inline-block">
+            <IconButton
+              href="https://github.com/iceEiji"
+              src={githubIconPng}
+              alt="my github account link"
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 自己紹介・メッセージ -->
-    <div class="mb-8">
-      <h2 class="text-3xl mb-2"><span class="text-main">M</span>essage</h2>
-      <p class="ml-4 mb-2">{profile.message}</p>
-    </div>
+      <!-- 自己紹介・メッセージ -->
+      <div class="mb-8">
+        <h2 class="text-3xl mb-2"><span class="text-main">M</span>essage</h2>
+        <p class="ml-4 mb-2">{profile.message}</p>
+      </div>
 
-    <!-- スキルセット -->
-    <div class="mb-8">
-      <h2 class="text-3xl mb-2"><span class="text-main">S</span>kill Set</h2>
+      <!-- スキルセット -->
+      <div class="mb-8">
+        <h2 class="text-3xl mb-2"><span class="text-main">S</span>kill Set</h2>
 
-      <h3 class="text-gray-400">プログラミング言語</h3>
-      <p class="ml-4 mb-2">
-        {profile.skillSet.programmingLanguages.join(" / ")}
-      </p>
+        <h3 class="text-gray-400">プログラミング言語</h3>
+        <p class="ml-4 mb-2">
+          {profile.skillSet.programmingLanguages.join(" / ")}
+        </p>
 
-      <h3 class="text-gray-400">フレームワーク</h3>
-      <p class="ml-4 mb-2">{profile.skillSet.frameworks.join(" / ")}</p>
+        <h3 class="text-gray-400">フレームワーク</h3>
+        <p class="ml-4 mb-2">{profile.skillSet.frameworks.join(" / ")}</p>
 
-      <h3 class="text-gray-400">資格・検定</h3>
-      <p class="ml-4 mb-2">{profile.skillSet.qualifications.join(" / ")}</p>
-    </div>
+        <h3 class="text-gray-400">資格・検定</h3>
+        <p class="ml-4 mb-2">{profile.skillSet.qualifications.join(" / ")}</p>
+      </div>
 
-    <!-- 年表・タイムライン -->
-    <div class="mb-8">
-      <h2 class="text-3xl mb-2"><span class="text-main">T</span>imeline</h2>
-      <VerticalTimeline timelineEvents={profile.timelineEvents} />
-    </div>
-  </main>
+      <!-- 年表・タイムライン -->
+      <div class="mb-8">
+        <h2 class="text-3xl mb-2"><span class="text-main">T</span>imeline</h2>
+        <VerticalTimeline timelineEvents={profile.timelineEvents} />
+      </div>
+    </main>
 
-  <aside class="m-auto p-6 max-w-[60ch]">
-    <!-- Twitterタイムライン -->
-    <TwitterTimeline
-      userName="iceEiji2"
-      height={500}
-    ></TwitterTimeline>
-  </aside>
+    <aside class="p-6 max-w-[60ch] lg:flex-auto lg:w-[35ch]">
+      <!-- Twitterタイムライン -->
+      <TwitterTimeline userName="iceEiji2" height={500} />
+    </aside>
+  </div>
 </Layout>

@@ -22,8 +22,10 @@ const appTitle = "IceEiji's Sandbox";
   </head>
   <body class="bg-base">
     <Header title={appTitle} />
-    <slot />
-    <Footer />
+    <div class="mx-auto max-w-[60ch] lg:max-w-[120ch]">
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>
 <style is:global>
