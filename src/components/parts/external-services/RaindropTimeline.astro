@@ -1,0 +1,19 @@
+---
+export interface Props {
+  userName: string;
+  collectionId: string;
+  height?: number;
+  width?: number;
+}
+
+const { userName, collectionId, height = 450, width } = Astro.props;
+---
+
+<iframe
+  style={`border: 0; width: 100%; ${
+    width != undefined ? `max-width: ${width}px;` : ""
+  } height: ${height}px;`}
+  allowfullscreen
+  frameborder="0"
+  src={`https://raindrop.io/${userName}/${collectionId}/embed/sort=-created`}
+></iframe>
